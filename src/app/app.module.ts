@@ -7,6 +7,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SystemModule} from './system/system.module';
 import {HttpClientModule} from '@angular/common/http';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {LinksService} from './shared/services/links.service';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,9 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     HttpClientModule,
     SystemModule,
     FontAwesomeModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [LinksService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

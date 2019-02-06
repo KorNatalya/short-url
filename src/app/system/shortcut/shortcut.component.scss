@@ -1,13 +1,17 @@
 .wrapper {
-  width: 840px;
+  width: 680px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+.form-group {
+  width: 100%;
+}
+
 .shortcut-form {
   margin-bottom: 40px;
-  min-width: 200px;
+  min-width: 100px;
   width: 100%;
   max-width: 600px;
   display: flex;

@@ -14,24 +14,26 @@ import {fas} from '@fortawesome/free-solid-svg-icons';
 import {far} from '@fortawesome/free-regular-svg-icons';
 import {fab} from '@fortawesome/free-brands-svg-icons';
 import {ShareButtonsModule} from '@ngx-share/buttons';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    SystemComponent,
-    ShortcutComponent,
-    HeaderComponent,
-    FooterComponent,
-    ResultComponent
-  ],
   imports: [
     CommonModule,
     SystemRoutingModule,
     AppRoutingModule,
     MatInputModule,
     MatButtonModule,
+    ReactiveFormsModule,
     ShareButtonsModule.withConfig({
       debug: true
     }),
+  ],
+  declarations: [
+    SystemComponent,
+    ShortcutComponent,
+    HeaderComponent,
+    FooterComponent,
+    ResultComponent
   ],
   providers: []
 })

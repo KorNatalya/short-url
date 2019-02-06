@@ -1,10 +1,19 @@
 <div class="wrapper">
 
-  <form class="shortcut-form">
-    <mat-form-field class="shortcut-form__input">
-      <input matInput placeholder="The Long URL:"/>
-    </mat-form-field>
-    <button (click)="cut()" class="btn" color="accent" mat-raised-button routerLink="./../result">CUT</button>
+  <form (ngSubmit)="onSubmit()" [formGroup]="form" class="shortcut-form">
+    <div
+      class="form-group">
+      <mat-form-field class="shortcut-form__input">
+        <input
+          id="longLink"
+          formControlName="longLink"
+          matInput
+          placeholder="The Long URL:"
+        />
+      </mat-form-field>
+    </div>
+    <button class="btn" color="accent" mat-raised-button type="submit">CUT</button>
+    <!--<button class="btn" color="accent" mat-raised-button routerLink="./../result" type="submit">CUT</button>-->
   </form>
 
 </div>
